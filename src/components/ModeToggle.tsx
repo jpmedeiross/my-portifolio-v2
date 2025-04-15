@@ -19,7 +19,7 @@ export function ModeToggle() {
       className="rounded-full"
     >
       {theme === "dark" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className="h-5 w-6" />
       ) : (
         <Moon className="h-5 w-5" />
       )}
