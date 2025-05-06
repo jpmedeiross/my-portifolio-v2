@@ -1,30 +1,25 @@
-import { ModeToggle } from "@/components/ModeToggle"
-import { Link } from "lucide-react"
-import { Button } from "./ui/button"
+"use client"
+
+import Link from "next/link"
+import { ModeToggle } from "./ModeToggle"
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-4 bg-background">
-      <div className="text-lg font-bold">João.</div>
-      <div className="flex items-center space-x-4">
-        <a href="#home" className="hover:underline">
-          Home
-        </a>
-        <a href="#about" className="hover:underline">
-          Sobre mim
-        </a>
-        <a href="#projects" className="hover:underline">
+    <nav className="sticky top-0 z-50 bg-white dark:bg-black shadow-md p-4 flex justify-between items-center">
+      <span className="text-2xl font-bold">&lt; João /&gt;</span>
+      <div className="flex gap-6 text-lg">
+        <Link href="#sobre" scroll={false}>
+          Sobre
+        </Link>
+        <Link href="#projetos" scroll={false}>
           Projetos
-        </a>
-        <a href="#contact" className="hover:underline">
+        </Link>
+        <Link href="#skills" scroll={false}>
+          Habilidades
+        </Link>
+        <Link href="#contato" scroll={false}>
           Contato
-        </a>
-        <Button
-          size={"icon"}
-          className="rounded-full bg-background text-balance"
-        >
-          <Link href="https://github.com/jpmedeiross">Teste</Link>
-        </Button>
+        </Link>
         <ModeToggle />
       </div>
     </nav>
