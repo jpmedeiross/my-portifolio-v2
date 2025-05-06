@@ -17,7 +17,7 @@ export default function Navbar() {
         <Link
           href="#sobre"
           scroll={false}
-          className="font-inter relative inline-block font-inter text-black dark:text-white
+          className="font-inter relative inline-block  text-black dark:text-white
              after:content-[''] after:absolute after:left-0 after:bottom-0 
              after:h-[2px] after:w-0 after:bg-blue-500 
              after:transition-all after:duration-300 
