@@ -12,18 +12,18 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="sticky top-0 z-50 bg-white dark:bg-black shadow-md p-4 flex justify-between items-center"
     >
-      <h1 className="text-2xl font-bold">&lt; João /&gt;</h1>
+      <h1 className="text-4xl font-semibold font-roboto">&lt; João /&gt;</h1>
       <div className="flex gap-6 text-lg">
-        <Link href="#sobre" scroll={false}>
+        <Link href="#sobre" scroll={false} className="font-inter">
           Sobre
         </Link>
-        <Link href="#skills" scroll={false}>
+        <Link href="#skills" scroll={false} className="font-inter">
           Habilidades
         </Link>
-        <Link href="#projetos" scroll={false}>
+        <Link href="#projetos" scroll={false} className="font-inter">
           Projetos
         </Link>
-        <Link href="#contato" scroll={false}>
+        <Link href="#contato" scroll={false} className="font-inter">
           Contato
         </Link>
         <ModeToggle />
