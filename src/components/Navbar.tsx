@@ -12,7 +12,9 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="sticky top-0 z-50 bg-white dark:bg-black shadow-md p-4 flex justify-between items-center"
     >
-      <h1 className="text-4xl font-semibold font-roboto">&lt; João /&gt;</h1>
+      <h1 className="text-4xl font-semibold font-roboto ml-10">
+        &lt; João /&gt;
+      </h1>
       <div className="flex gap-6 text-lg">
         <Link
           href="#sobre"

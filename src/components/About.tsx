@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Download } from "lucide-react"
 import Image from "next/image"
 
 export default function About() {
@@ -24,13 +25,16 @@ export default function About() {
             modernas, responsivas e performáticas com tecnologias como React,
             Next.js e Tailwind CSS.
           </p>
-          <a
-            href="/Joao_Medeiros_CV_EN.pdf"
-            download
-            className="inline-block px-15 py-2 bg-blue-600 text-white rounded-2xl shadow-md hover:bg-blue-700 transition-all duration-300"
-          >
-            Baixar currículo
-          </a>
+          <div>
+            <a
+              href="/Joao_Medeiros_CV_EN.pdf"
+              download
+              className="font-inter flex gap-1 bg-blue-950 hover:bg-blue-800 text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-pulse hover:animate-none"
+            >
+              <Download />
+              Baixar currículo
+            </a>
+          </div>
         </div>
 
         <motion.div
