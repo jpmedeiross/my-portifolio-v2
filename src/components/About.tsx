@@ -25,7 +25,7 @@ export default function About() {
             Next.js e Tailwind CSS.
           </p>
           <a
-            href="/curriculo.pdf"
+            href="/Joao_Medeiros_CV_EN.pdf"
             download
             className="inline-block px-15 py-2 bg-blue-600 text-white rounded-2xl shadow-md hover:bg-blue-700 transition-all duration-300"
           >
